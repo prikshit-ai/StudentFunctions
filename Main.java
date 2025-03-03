@@ -1,6 +1,12 @@
 import java.util.Scanner;
+/**
+ * Name: Prikshit Gaur
+ * PRN: 23070126094
+ * Batch: AIML 2023-27
+ * 
+ 
+ */
 
-/
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
