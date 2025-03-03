@@ -5,7 +5,7 @@ public class Student {
     private String dob;
     private double marks;
 
-    // Constructor
+    
     public Student(String prn, String name, String dob, double marks) {
         this.prn = prn;
         this.name = name;
