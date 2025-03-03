@@ -78,4 +78,30 @@ public class Studentmanager {
         }
     }
 
+    // Update student details
+    public void updateStudent(Scanner sc) {
+        System.out.print("Enter PRN to update: ");
+        String prn = sc.next();
+        for (Student student : students) {
+            if (student.getPrn().equals(prn)) {
+                System.out.print("Enter New Name: ");
+                student.setName(sc.next());
+                System.out.print("Enter New Date of Birth (dd-MM-yyyy): ");
+                student.setDob(sc.next());
+                System.out.print("Enter New Marks: ");
+
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid input! Enter a valid number for marks: ");
+                    sc.next();
+                }
+                student.setMarks(sc.nextDouble());
+
+                System.out.println("Student details updated.");
+                return;
+            }
+        }
+        System.out.println("Student not found.");
+    }
+
     
+}
